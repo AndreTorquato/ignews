@@ -9,9 +9,10 @@ import styles from './post.module.scss';
 import { Session } from "next-auth/adapters";
 
 
-interface SessionProps extends Session{
+interface SessionProps extends Session {
   activeSubscription: unknown;
 }
+
 interface PostProps{
   post:{
   slug: string;
@@ -20,6 +21,7 @@ interface PostProps{
   updatedAt: string;
   }
 }
+
 export default function Post({ post }: PostProps){
   return (
         <>
