@@ -22,7 +22,7 @@ const posts = [
     updatedAt: "10 de Abril",
   },
 ];
-describe("Home page", () => {
+describe("Posts page", () => {
   it("renders correctly", () => {
     render(<Posts posts={posts} />);
 
@@ -65,3 +65,4 @@ describe("Home page", () => {
     );
   });
 });
+
